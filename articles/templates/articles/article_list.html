@@ -1,0 +1,5 @@
+{% for article in article_list %}
+      <ul>
+        <li><a href="{% url 'article-detail' article.id %}">
+              {{ article.title }} </a></li>
+{% endfor %}
