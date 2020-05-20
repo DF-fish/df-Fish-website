@@ -11,4 +11,4 @@ To get this code running on your windows machine:
 5. Activate the VE by navigating to data-fish-env and running scripts\activate
 6. Navigate back to your project folder, and run git clone https://github.com/DF-fish/df-Fish-website
 7. Run the command: pip install -r requirments.txt to install all of the requirements for this project into the virtual environment.
-8. Now you should now be able to run your project from the folder by using that manage.py scripts.  The command to run it is: python manage.py runserver.  When you open a browser at localhost:8000 you should be able to see that site running in the development environment :)
+8. Now you should now be able to run your project from the folder by using the manage.py script.  The command to run it is: python manage.py runserver.  When you open a browser at localhost:8000 you should be able to see that site running in the development environment :)
