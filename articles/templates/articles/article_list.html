@@ -1,5 +1,9 @@
-{% for article in article_list %}
-      <ul>
-        <li><a href="{% url 'article-detail' article.id %}">
-              {{ article.title }} </a></li>
-{% endfor %}
+{% extends 'articles/base_generic.html' %}
+
+{% block article_list %}
+  {% for article in article_list %}
+    <ul>
+      <li><a href="{% url 'article-detail' article.id %}">
+        {{ article.title }} </a></li></ul>
+    {% endfor %}
+{% endblock %}

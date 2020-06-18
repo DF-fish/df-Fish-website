@@ -1,0 +1,139 @@
+body {
+	background-color: #262626;
+	background-attachment: fixed;
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+	background-color: #323232;
+}
+
+h1 {
+    color: #F57240;
+	font-family:'Roboto', Calibri, sans-serif;
+	padding-top: 15px;
+	text-align: center;
+}
+
+h3 {
+	color: #66F5F5;
+	font-family: 'Roboto Light', Calibri, sans-serif;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+/* top navigation bar */
+.nav_bar ul {
+	list-style: none;
+	background-color: #323232;
+	overflow: hidden;
+	margin: 10px 0;
+	padding: 0;
+}
+
+.nav_bar li {
+	float: right;
+}
+
+/* 'display: block' makes whole link area clickable (not just the text) 
+& allows us to specify padding, height, width, margins, etc. if you want)*/
+.nav_bar a {
+	display: block;
+	padding: 1px 13px;
+	text-align: center;
+	text-decoration: none;
+	font-family: 'Open Sans', Calibri, sans-serif;
+	color: #C8B181;
+}
+
+.nav_bar a:hover {
+	background-color: #4d4d4d;
+}
+
+/* Create three unequal columns that float next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column on home pg */
+.column.side {
+  width: 34%;
+}
+
+/* Middle column on home pg is .article_list */
+
+/* create unequal columns for content in articles */
+.column.side1 {
+	width: 22.5%;
+}
+
+.column.middle {
+	width: 55%;
+	padding: 0 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top 
+of each other instead of next to each other. */
+@media screen and (max-width: 600px) {
+  .column.side, .article_list, .column.side1, .column.middle {
+    width: 97%;
+  }
+}
+
+/* article links on home page */
+.article_list {
+	text-align: left;
+	font-family: 'Open Sans', Calibri, sans-serif;
+	list-style: none;
+	padding-top: 10px;
+	width: 32%;
+}
+
+.article_list a:link {
+	color: #EED6C4;
+}
+
+.article_list a:hover {
+	color: #32A7F5;
+	text-decoration: none;
+}
+
+.article_list a:visited {
+	color: #EED6C4;
+}
+
+/* title & content from article_detail.html */
+.title {
+	background-color: #323232;
+	color: #F57240;
+	text-align: center;
+	padding: 3px 0;	
+}
+
+.title h1 {
+	font-family:'Roboto Light', Calibri, sans-serif;
+	padding: 5px;
+}
+
+.article_text {
+	color: #66F5F5;
+	font-family:'Opens Sans', Calibri, sans-serif;
+	font-size: large;
+	text-align: left;
+}
+
+.notebook {
+	color: #EED6C4;
+	font-family:'Open Sans', Calibri, sans-serif;
+	font-size: medium;
+	text-align: left;
+}

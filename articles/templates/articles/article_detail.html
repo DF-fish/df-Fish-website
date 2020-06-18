@@ -1,3 +1,27 @@
-<h1>Title: {{ article.title }}</h1>
-<p>Text: {{ article.text }}</p>
-<p>Downloadable Jupyter Notebook: {{ article.jupyter_playground }}</p>
+<!--'block extra_head' used to link to CSS from base_generic.html-->
+{% block extra_head %}
+    {% load static %}
+   <link rel="stylesheet" href="{% static 'articles/styles.css' %}">
+{% endblock %}
+
+<div  class="title">
+  <h1>Title: {{ article.title }}</h1>
+</div>
+
+<!--'include' tag allows multiple files to use content from nav.html;
+allows a parent or child template to get content from other child templates-->
+{% block navbar %}
+  {% include 'articles/nav.html' %}
+{% endblock %}
+
+<!--create 3 unequal columns for article content-->
+<div class="row">
+  <div class="column side1"></div>
+
+  <div class="column middle">
+    <p class="article_text">Text: {{ article.text }}</p>
+    <p class="notebook">Downloadable Jupyter Notebook: {{ article.jupyter_playground }}</p>
+  </div>
+
+  <div class="column side1"></div>
+</div>
