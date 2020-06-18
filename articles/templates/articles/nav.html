@@ -1,0 +1,10 @@
+<!--instead of writing navbar code multiple times, create  1 template
+and use block tags with 'include' in files where nav.html is needed-->
+{% block navbar %}
+  <div class="nav_bar">
+    <ul>
+	  <li><a href="#aboutme">About Me</a></li>
+	  <li><a href="#home">Home</a></li>
+    </ul>
+  </div>
+{% endblock %}
